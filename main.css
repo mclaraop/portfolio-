@@ -1,0 +1,700 @@
+@import url("style.css");
+@import url("headr.css");
+
+body {
+    align-items: center;
+    background-color: #FFEBD8;
+    list-style: 10;
+    font-family: 'Raleway';
+    color: #89B9AD;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    width: 23%;
+    border-radius: 50%;
+    float: right;
+    margin-right: 5%;
+    margin-top: 7%;
+}
+
+.profile-title {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    font-size: 2.25rem;
+}
+
+.profile-title-descricao {
+    margin-top: 0;
+    align-items: center;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.profile-container {
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.profile-network {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.profile-network a {
+    color: #FF8F8F;
+    font-size: 1.0rem;
+    text-decoration: none;
+    position: relative;
+    padding-left: 20px;
+    line-height: 30px;
+}
+
+.profile__network__item {
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.profile__network__item img {
+    width: 30px;
+    height: auto;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about__title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-family: 'Raleway';
+    color: #FF8F8F;
+}
+
+.about__paragraph {
+    font-size: 1.25rem;
+    color: black;
+}
+
+.skills-title, .hobbies-title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.25rem;
+}
+
+.skills-line, .hobbies-line {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 244px;
+    gap: 32px;
+}
+
+.skills-box, .hobbies-box {
+    position: relative;
+    list-style-type: none;
+    width: 130px;
+    height: 130px;
+    padding: 16px;
+    color: #89B9AD;
+    font-family: 'Raleway';
+    background-color: #FFC5C5;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.skills-box img, .hobbies-box img {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 10px;
+}
+
+.skills-name, .hobbies-name {
+    font-size: 1.0rem;
+    margin-top: 10px;
+}
+
+.education {
+    width: 100%;
+    padding: 20px;
+    gap: 32px;
+}
+
+.education-title {
+    text-align: center;
+}
+
+.education-courses {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.education-course-card {
+    width: 368px;
+    height: auto;
+    padding: 16px;
+    color: #FF8F8F;
+    font-family: 'Raleway';
+    font-size: 1.0rem;
+    background-color: #C7DCA7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.education-course-card img {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.education-course-card:nth-child(2) img {
+    width: 300px;
+    height: 190px;
+    margin-top: 10px;
+}
+
+.education-course-card h4, .education-course-card span {
+    text-align: center;
+    margin-bottom: -8px;
+}
+
+.experience-title {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Raleway';
+    color: #FF8F8F;
+}
+
+.experiencie-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.experiencie-card img {
+    border-radius: 20px;
+    width: 650px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.experience-info {
+    flex: 1;
+    text-align: left;
+}
+
+.experience-info h2, .experience-info h3 {
+    margin: 0;
+    text-align: left;
+}
+
+.buttons {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn-primary, .btn-secondary {
+    width: 116px;
+    height: 51px;
+    border: 1px;
+    border-radius: 10px;
+    padding: 16px;
+    gap: 10px;
+    color: #89B9AD;
+    font-size: 1.0rem;
+    background-color: #FFC5C5;
+}
+
+header {
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 22px;
+    margin-left: -115px;
+}
+
+.menu__list {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    header {
+        padding: 10px 100px;
+    }
+
+    .logo {
+        font-size: 1.0rem;
+    }
+
+    .menu__list {
+        position: relative;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 25px;
+        margin-right: 70px;
+    }
+    
+    .menu__list a {
+        color: #FF8F8F;
+        font-size: 1.0rem;
+        text-decoration: none;
+        width: 100px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .menu__list__item:nth-child(6) a {
+        font-weight: bold;
+        color: black;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .menu__list {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin-left: -50px;
+    }
+    .menu__list a {
+        color: #FF8F8F;
+        font-size: 0.9rem;
+        text-decoration: none;
+        text-align:left;
+        display: inline-block;
+        padding: 5px;
+    }
+
+    .menu__list__item:nth-child(6), .menu__list__item:nth-child(3) {
+        display: none;
+    }
+
+    .profile-container {
+        margin: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img {
+        width: 40%;
+        display: block;
+        margin: 20px auto 0 auto;
+        float: none;
+    }
+
+    .profile-title {
+        font-size: 1.5rem;
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .profile-title-descricao {
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .profile-network {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 10px;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skills-line, .hobbies-line {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+    
+    .skills-box, .hobbies-box {
+        flex: 0 1 calc(50% - 10px);
+        box-sizing: border-box;
+        height: auto;
+        margin: 0;
+    }
+
+    .education {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+    }
+
+    .education-courses {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .education-course-card {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+
+    .experiencie-card {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .experiencie-card img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .experience-info {
+        text-align: center;
+        width: 100%;
+    }
+
+    .experience-info h2, .experience-info h3 {
+        text-align: center;
+    }
+
+    .buttons {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .menu__list {
+        list-style-type: none;
+        display: flex;
+        gap: 5px;
+        margin-left: -50px;
+    }
+    .menu__list a {
+        color: #FF8F8F;
+        font-size: 0.9rem;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    .menu__list__item:nth-child(6) {
+        font-weight: bold
+    }
+    
+    .profile-img {
+        width: 35%;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .profile-title {
+        font-size: 1.8rem;
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .profile-title-descricao {
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .profile-container {
+        margin: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__paragraph {
+        font-size: 1.1rem;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .profile-network {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 10px;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .skills-line, .hobbies-line {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .skills-box, .hobbies-box {
+        width: 80px;
+        height: 80px;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .education {
+        width: 100%;
+        padding: 40px;
+        height: auto;
+    }
+
+    .education-courses {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .education-course-card {
+        width: 48%;
+        margin-bottom: 16px;
+    }
+
+    .experiencie-card {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .experiencie-card img {
+        width: 70%;
+        height: auto;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .experience-info {
+        flex: 1;
+        text-align: left;
+    }
+
+    .experience-info h2, .experience-info h3 {
+        text-align: left;
+    }
+
+    .buttons {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 50%;
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (min-width: 375px) and (max-width: 766px) {
+    .profile-container {
+        margin: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img {
+        width: 35%;
+        display: block;
+        margin: 20px auto 0 auto;
+        float: none;
+    }
+
+    .profile-title {
+        font-size: 1.25rem;
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .profile-title-descricao {
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .profile-network {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 10px;
+        width: 100%;
+        margin: 20px auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .profile__network__item a {
+        font-size: 1rem;
+        margin-left: -25px;
+    }
+
+    .about__title {
+        font-size: 1.25rem;
+    }
+
+    .about__paragraph {
+        font-size: 1rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-line, .hobbies-line {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 16px;
+        margin-bottom: 10px;
+    }
+
+    .skills-box, .hobbies-box {
+        flex: 0 1 calc(50% - 16px);
+        box-sizing: border-box;
+        height: auto;
+        margin: 0;
+        width: 107px;
+        height: 107px;
+    }
+
+    .education-title {
+        font-size: 1.25rem;
+    }
+
+    .education {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+    }
+
+    .education-courses {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .education-course-card {
+        width: 80%;
+        height: 10%;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+
+    .experience-title {
+        font-size: 1.25rem;
+    }
+
+    .experiencie-card {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .experiencie-card img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .experience-info {
+        text-align: center;
+        width: 100%;
+    }
+
+    .experience-info h2, .experience-info h3 {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .buttons {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 140px;
+        max-width: 100%;
+        padding: 10px 20px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .contact {
+        font-size: 1rem;
+    }
+}

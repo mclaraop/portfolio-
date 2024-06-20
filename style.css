@@ -1,0 +1,49 @@
+.contact {
+    /* Define a posição como relativa para permitir o posicionamento dos elementos filhos */
+    position: relative;
+    /* Ajusta o espaçamento ao redor da seção */
+    padding: 50px;
+    font-size: 1.25rem;
+}
+  
+.contact-info {
+    /* Define a largura máxima para o conteúdo */
+    max-width: 500px;
+    /* Centraliza horizontalmente o conteúdo */
+    margin: 0 auto;
+}
+  
+.contato__input,
+.contato__textarea,
+.contato__botao {
+    /* Define a largura total do elemento dentro do container */
+    width: 100%;
+    /* Adiciona espaçamento entre os elementos */
+    margin-bottom: 10px;
+    font-size: 1.0rem;
+    border-radius: 8px;
+}
+  
+.contato__botao {
+    /* Ajusta estilos do botão, como cores e borda */
+    border-radius: 10px;
+    background-color: #FFC5C5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+    /* Defina o estilo do rodapé */
+    color: black;
+    padding: 10px; /* Adiciona espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+  }
+  
+  footer p {
+    /* Estilo dos parágrafos dentro do rodapé */
+    font-size: 1.25rem; /* Tamanho da fonte */
+    margin: 5px 0; /* Adiciona margem entre os parágrafos */
+  }
+
